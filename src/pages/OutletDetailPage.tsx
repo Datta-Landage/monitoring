@@ -18,7 +18,7 @@ const OutletDetailPage = () => {
       }
     };
     fetchData();
-    const interval = setInterval(fetchData, 15000);
+    const interval = setInterval(fetchData, 300000); // 5 minutes
     return () => clearInterval(interval);
   }, [outletId]);
 

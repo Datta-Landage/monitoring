@@ -103,7 +103,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
       }
     };
     fetchAlerts();
-    const interval = setInterval(fetchAlerts, 10000);
+    const interval = setInterval(fetchAlerts, 300000); // 5 minutes
     return () => clearInterval(interval);
   }, []);
 

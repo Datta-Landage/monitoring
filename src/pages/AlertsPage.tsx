@@ -16,6 +16,8 @@ const AlertsPage = () => {
       setLoading(false);
     };
     fetchAlerts();
+    const interval = setInterval(fetchAlerts, 300000); // 5 minutes
+    return () => clearInterval(interval);
   }, []);
 
   const filteredAlerts = alerts.filter(alert => 

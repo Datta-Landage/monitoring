@@ -53,7 +53,7 @@ const DashboardPage = () => {
       }
     };
     // fetch();
-    const interval = setInterval(fetch, 120000);
+    const interval = setInterval(fetch, 300000); // 5 minutes
     return () => clearInterval(interval);
   }, []);
 
