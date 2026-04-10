@@ -7,8 +7,8 @@ export const api = axios.create({
   baseURL: API_URL,
   timeout: 10000,
   headers: {
-    "server-secret": "SERVER_SECRET",
-    "api-server-secret": "API_SERVER_SECRET",
+    "server-secret": "bb0af0fa-c17b-4c0f-9b25-b8cf268e8638",
+    "api-server-secret": "741bf53f-bebe-41f9-8acb-8d75fbd6f6c1",
   },
 });
 
